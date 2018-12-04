@@ -31,6 +31,7 @@ public:
     int samplesPerSec;  //sampling rate
     void* buffer;  //data buffer
     int64_t renderTimeMs;
+    int avsync_type;
   };
 public:
   virtual bool onRecordAudioFrame(AudioFrame& audioFrame) = 0;
@@ -57,6 +58,7 @@ public:
     void* vBuffer;  //V data buffer
     int rotation; // rotation of this frame (0, 90, 180, 270)
     int64_t renderTimeMs;
+    int avsync_type;
   };
 public:
   virtual bool onCaptureVideoFrame(VideoFrame& videoFrame) = 0;

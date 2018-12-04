@@ -63,7 +63,8 @@ public class AgoraManager {
         mRtcEngine.setVideoProfile(options.getInt("videoProfile"), options.getBoolean("swapWidthAndHeight")); //视频配置，
         mRtcEngine.enableWebSdkInteroperability(true);  //设置和web通信
         mRtcEngine.setChannelProfile(options.getInt("channelProfile")); //设置模式
-        mRtcEngine.setClientRole(options.getInt("clientRole"), null); //设置角色
+        //mRtcEngine.setClientRole(options.getInt("clientRole"), null); //设置角色
+        mRtcEngine.setClientRole(options.getInt("clientRole")); //设置角色
     }
 
     /**
